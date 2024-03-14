@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FooterSocials from '../components/FooterSocials.astro';
+import HeroSection from '../components/HeroSection.astro';
+import LandingHeader from '../components/LandingHeader.astro';
+import InfraestructuraIT from '../components/InfraestructuraIT.astro';
+import CentrosMisionCritica from '../components/CentrosMisionCritica.astro';
+import VideoVigilanciaInteligente from '../components/VideoVigilanciaInteligente.astro';
+import SolucionesMovilidad from '../components/SolucionesMovilidad.astro';
+---
+
+<Layout title="Fix Group">
+
+	<header>
+		<LandingHeader />
+	</header>
+
+	<main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+ 	>
+			
+			<div class="snap-center">
+				<HeroSection />
+			</div>
+
+			<div class="snap-center">
+				<InfraestructuraIT />
+			</div>	
+
+			<div class="snap-center">
+				<CentrosMisionCritica />
+			</div>
+			
+			<div class="snap-center">
+				<SolucionesMovilidad />
+			</div>
+			
+			<div class="snap-center">
+				<VideoVigilanciaInteligente />
+			</div>
+		
+	</main>
+
+	<footer>
+		<FooterSocials />
+	</footer>		
+		    
+</Layout>

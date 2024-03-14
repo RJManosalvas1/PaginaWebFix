@@ -1,0 +1,47 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+---
+
+<Layout title="Quienes somos">
+  <main>
+    <header>
+        <LandingHeader />
+    </header>
+
+    <section class="bg-black h-screen w-screen text-center relative overflow-hidden flex justify-center">
+      <div class="z-30 relative h-full flex flex-col flex-grow">
+        <header class="text-center">
+          <div>
+            <h2 class="text-white pt-40 text-5xl text-[40px] font-medium" style="line-height: 1.8;">
+              Quienes Somos
+            </h2>
+          </div>
+        </header>
+        <body class="flex">
+          <p class="text-white text-2xl font-medium text-left px-10 py-6 " style="line-height: 1.8;">
+            FIX GROUP es una compañía de consultoría, <br> 
+            integración y servicios gestionados. Una sólida  <br> 
+            base tecnológica atesorada en nuestros 20 años de  <br>
+            experiencia, nos han permitido la implantación de <br>
+            soluciones tecnológicas con un alto valor añadido <br>
+            para sectores claves como Gobierno, Educación, <br>
+            Telecomunicaciones y otros.
+          </p>
+          <div class="ml-auto mr-10 flex mt-[-350px]">
+            <img src="images/image-nasa.jpg" alt="" width="500" height="800" >
+          </div>
+        </body>
+      </div>
+    </section>
+   
+</main>
+
+
+
+
+
+
+
+
+</Layout>

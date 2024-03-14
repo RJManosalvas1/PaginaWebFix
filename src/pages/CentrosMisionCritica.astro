@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LandingHeader from "../components/LandingHeader.astro";
+---
+
+<Layout title="Centros de misión critica">
+  <main>
+    <header>
+        <LandingHeader />
+    </header>
+
+    <section class="bg-black h-screen w-screen text-center relative overflow-hidden flex justify-center">
+      <div class="z-30 relative h-full flex flex-col flex-grow">
+        <header class="text-center">
+          <div>
+            <h2 class="text-white pt-40 text-5xl text-[40px] font-medium" style="line-height: 1.8;">
+              Centros de Misión Critica
+            </h2>
+          </div>
+        </header>
+        <body class="flex">
+          <p class="text-white text-2xl font-medium text-left px-20 py-20 " style="line-height: 1.8;">
+                
+                Los centros de misión crítica son instalaciones especializadas <br>
+                diseñadas para alojar equipos de tecnología de la información (TI) <br>
+                y telecomunicaciones que son vitales para el funcionamiento continuo <br>
+                de una organización. Estos centros están diseñados con una serie de <br>
+                características específicas para garantizar la disponibilidad, <br>
+                seguridad y fiabilidad de los sistemas y datos críticos que albergan. <br> 
+          </p>
+          <div class="ml-auto mr-10 flex mt-[-350px] py-10  px-20">
+            <img src="images/image-misioncritica.jpg" alt="" class="max-w-md" >
+          </div>
+          
+        </body>
+      </div>
+    </section>
+</main>
+
+</layout>

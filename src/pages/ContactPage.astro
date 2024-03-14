@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+import LogoFix from "../components/logo-fix.astro";
+import IconFacebook from "../components/IconFacebook.astro";
+import IconInstagram from "../components/IconInstagram.astro";
+import IconTwitter from "../components/IconTwitter.astro";
+import IconHome from "../components/IconHome.astro";
+---
+
+<script src="https://kit.fontawesome.com/470329db83.js" crossorigin="anonymous"></script>
+
+<Layout title="Fix Group">
+    <header
+    id="contact-header"
+
+          class="py-3 px-10 flex items-center fixed top-0 w-full align-middle justify-between z-40 text-black bg-[#0f172a]">
+          <div class="flex flex-col items-center">
+            <a href="/">
+              <LogoFix />
+            </a>
+          </div>
+    
+          <div class="text-center">
+            <h1 class="text-5xl font-bold text-white mt-10">CONTACTANOS</h1>
+          </div>
+    
+          <div class="w-16"></div>
+      </header>
+      
+<div class="bg-gray-800 flex justify-center items-center h-screen">
+  <section class="flex flex-col items-center relative bg-gray-700"> 
+
+      <div class="p-5 xsm:p-10 bg-[#0f172a]">
+
+        <div class="lg:flex lg:justify-center bg-[#0f172a]">
+
+          <div class="w-[100%] lg:w-fit">
+            <img class="lg:h-[70vh]" src="images/image-contact.jpg" alt="">
+          </div>
+
+          <div class="space-y-5 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-3 lg:max-w-[600px]">
+            <div class="bg-black text-white p-4 text-center space-y-3 lg:pt-10">
+              <h2 class="font-bold mt-5">CONTACTANOS</h2>
+              <p class="">Lorem ipsum dolor sit amet consectetur.</p>
+              <div class="icon space-x-2">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+              </div>
+            </div>
+
+            <div class="bg-black text-white p-4 text-center space-y-3 lg:pt-10">
+              <div class="icon h-12 w-12 ring-4 text-3xl ring-[white] pt-1 rounded-[50%] m-auto">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h2 class="font-bold">EMAIL</h2>
+              <div class="">
+                <a href="">INFO@FIXGROUP.NET</a>
+              </div>
+            </div>
+
+            <div class="bg-black text-white p-4 text-center space-y-3 lg:pt-10">
+              <div class="icon h-12 w-12 ring-4 text-3xl ring-[white] pt-1 rounded-[50%] m-auto">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <h2 class="font-bold">DIRECCIÓN</h2>
+              <div class="">
+                FRANCISCO CRUZ MIRANDA 17-18 Y MAÑOSCA, QUITO
+              </div>
+            </div>
+
+            <div class="bg-black text-white p-4 text-center space-y-3 lg:pt-10">
+              <div class="icon h-12 w-12 ring-4 text-3xl ring-[white] pt-1 rounded-[50%] m-auto">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <h2 class="font-bold text-customWhite">LLAMANOS</h2>
+              <div class="">
+                +593 9 9 620 65 92 <br> 0 22 465 632
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+</div>
+
+</Layout>

@@ -1,0 +1,31 @@
+---
+import Section from "./Section.astro"
+import FooterMenu from "./FooterMenu.astro";
+---
+
+<Section
+    title=""
+    subtitle="Quienes somos"
+    color="white"
+    slot="background"
+    bg-black
+>
+
+<div slot="footer">
+  <a href="/QuienesSomos"
+    class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded font-medium text-white px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+  >
+    Botón
+  </a>
+</div>
+
+<img 
+slot="background"
+class="object-center object-cover h-full w-full"
+src="images/image-3 .jpg" alt="">
+
+
+
+  <FooterMenu />
+
+</Section>

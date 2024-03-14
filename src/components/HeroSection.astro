@@ -1,0 +1,31 @@
+---
+import Section from "./Section.astro"
+import FooterMenu from "./FooterMenu.astro";
+---
+<Section
+  title="Fix Group"
+  subtitle="Quienes somos"
+  color="white"
+  slot="background"
+  bg-black
+>
+
+<div slot="footer" class="h-full items-center" style="margin-top: 20px;"> 
+  <body class="flex justify-center"> 
+    <p class="text-white text-2xl font-medium text-center px-10 py-4 max-w-4xl mx-auto" style="margin-top: 0;"> 
+      FIX GROUP es una compañía de consultoría, integración y servicios gestionados. Una sólida base tecnológica atesorada en nuestros 20 años de experiencia, nos han permitido la implantación de soluciones tecnológicas con un alto valor añadido para sectores claves como Gobierno, Educación, Telecomunicaciones y otros.
+    </p>
+  </body>
+
+  <FooterMenu />
+</div>
+
+<img 
+slot="background"
+class="object-center object-cover h-full w-full opacity-30"
+src="images/image-principal.jpg" alt="">
+
+</Section>
+
+
+
