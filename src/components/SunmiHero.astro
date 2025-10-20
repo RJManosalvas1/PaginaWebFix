@@ -1,0 +1,17 @@
+---
+import SunmiBadge from './SunmiBadge.astro';
+const { title = 'Soluciones POS inteligentes', subtitle = 'Hardware + Software + Servicios', img = '/images/sunmi-hero.jpg' } = Astro.props;
+---
+<section class="relative min-h-[78vh] md:min-h-[88vh] flex items-end overflow-hidden bg-black">
+<img src={img} alt="SUNMI" class="absolute inset-0 w-full h-full object-cover"/>
+<div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black"></div>
+<div class="relative z-10 container mx-auto max-w-7xl px-6 pb-20">
+<SunmiBadge size="lg" />
+<h1 class="mt-4 font-serif text-4xl md:text-6xl text-white max-w-2xl leading-tight">{title}</h1>
+<p class="mt-4 text-white/85 text-lg md:text-xl max-w-2xl">{subtitle}</p>
+<div class="mt-6 flex gap-3">
+<a href="#catalogo" class="inline-flex items-center rounded-full bg-[#ff6a00] text-white px-6 py-3 font-semibold hover:opacity-90">Ver catálogo</a>
+<a href="/ContactPage" class="inline-flex items-center rounded-full border border-white/50 text-white px-6 py-3 hover:bg-white hover:text-black">Cotizar ahora</a>
+</div>
+</div>
+</section>

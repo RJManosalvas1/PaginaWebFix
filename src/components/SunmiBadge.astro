@@ -1,0 +1,5 @@
+---
+const { size = 'sm' } = Astro.props;
+const cls = size === 'lg' ? 'px-4 py-1.5 text-sm' : 'px-3 py-1 text-xs';
+---
+<span class={`inline-flex items-center rounded-full bg-[#ff6a00]/10 border border-[#ff6a00]/30 text-[#ff6a00] ${cls} tracking-widest uppercase`}>Sunmi • Distribuidor Principal</span>

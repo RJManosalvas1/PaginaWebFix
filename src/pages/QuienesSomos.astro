@@ -2,46 +2,33 @@
 import Layout from "../layouts/Layout.astro";
 import LandingHeader from "../components/LandingHeader.astro";
 ---
-
-<Layout title="Quienes somos">
+<Layout title="Quienes Somos">
   <main>
     <header>
-        <LandingHeader />
+      <LandingHeader />
     </header>
 
-    <section class="bg-black h-screen w-screen text-center relative overflow-hidden flex justify-center">
-      <div class="z-30 relative h-full flex flex-col flex-grow">
-        <header class="text-center">
-          <div>
-            <h2 class="text-white pt-40 text-5xl text-[40px] font-medium" style="line-height: 1.8;">
-              Quienes Somos
-            </h2>
-          </div>
-        </header>
-        <body class="flex">
-          <p class="text-white text-2xl font-medium text-left px-10 py-6 " style="line-height: 1.8;">
-            FIX GROUP es una compañía de consultoría, <br> 
-            integración y servicios gestionados. Una sólida  <br> 
-            base tecnológica atesorada en nuestros 20 años de  <br>
-            experiencia, nos han permitido la implantación de <br>
-            soluciones tecnológicas con un alto valor añadido <br>
-            para sectores claves como Gobierno, Educación, <br>
-            Telecomunicaciones y otros.
+    <section class="bg-black min-h-screen w-screen text-center relative overflow-hidden flex items-center justify-center py-20 px-6">
+      <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 items-center gap-16">
+        <!-- Texto estilizado -->
+        <div class="text-left space-y-6">
+          <h2 class="text-white text-5xl md:text-6xl font-serif tracking-wide leading-tight">
+            Quienes Somos
+          </h2>
+          <p class="text-white/90 text-lg md:text-xl leading-relaxed font-light">
+            <span class="font-semibold text-white">FIX GROUP</span> es una compañía de <span class="text-emerald-400 font-medium">consultoría</span>, <span class="text-emerald-400 font-medium">integración</span> y <span class="text-emerald-400 font-medium">servicios gestionados</span>. Con más de <span class="font-semibold">20 años de experiencia</span>, nuestra sólida base tecnológica nos ha permitido implantar soluciones innovadoras con un alto valor añadido para sectores clave como <span class="font-semibold">Gobierno</span>, <span class="font-semibold">Educación</span>, <span class="font-semibold">Telecomunicaciones</span> y muchos otros.
           </p>
-          <div class="ml-auto mr-10 flex mt-[-350px]">
-            <img src="images/image-nasa.jpg" alt="" width="500" height="800" >
-          </div>
-        </body>
+          <a href="/" class="inline-block mt-6 border border-white/60 text-white px-8 py-3 text-base font-medium tracking-wide hover:bg-white hover:text-black transition rounded-full">
+            Volver al inicio
+          </a>
+        </div>
+
+        <!-- Imagen con efecto -->
+        <div class="relative group">
+          <div class="absolute -inset-2 bg-gradient-to-r from-emerald-500/20 to-cyan-400/20 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition"></div>
+          <img src="/images/image-nasa.jpg" alt="Vista desde el espacio" class="relative w-full h-auto rounded-3xl shadow-2xl transform group-hover:scale-[1.02] transition duration-500" />
+        </div>
       </div>
     </section>
-   
-</main>
-
-
-
-
-
-
-
-
+  </main>
 </Layout>

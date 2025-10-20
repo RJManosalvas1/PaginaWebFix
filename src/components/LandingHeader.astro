@@ -17,10 +17,8 @@ import LogoFix from './logo-fix.astro';
     <nav class="hidden xl:block sm:hidden">
     <ul class="flex text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
         >
-        <li><a href="#Infraestructura">Infraestructura IT</a></li>
-        <li><a href="#Centros">Centros de misión critica</a></li>
-        <li><a href="#Movilidad">Soluciones movilidad</a></li>
-        <li><a href="#VideoVigilancia">Videovigilancia inteligente</a></li>
+        <li><a href="/DistribuidorSunmi#sunmi" class="hover:text-[#ff6a00] transition-colors">Sunmi</a></li>
+        <li><a href="/MiWifi#miwifi" class="hover:text-emerald-400 transition-colors duration-300">MiWiFi</a></li>
       </ul>
     </ul>
     </nav>
@@ -77,8 +75,8 @@ import LogoFix from './logo-fix.astro';
   
     const observerOptions = {
       root: null,
-      rootMargin: "0px", // en cuanto se vea el elemento
-      threshold: 0.9, // porcentaje de visibilidad
+      rootMargin: "0px", 
+      threshold: 0.9, 
     }
   
     const observer = new IntersectionObserver((entries) => {

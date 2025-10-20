@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  price: string;
+  period?: string;
+  bullets: string[];
+  highlight?: boolean;
+  ctaHref?: string;
+  ctaText?: string;
+}
+const {
+  title, price, period = "/mes", bullets,
+  highlight = false, ctaHref = "/ContactPage?service=miwifi",
+  ctaText = "Solicitar demo"
+} = Astro.props as Props;
+---
+<article class={`rounded-2xl border ${highlight ? 'border-emerald-400 bg-white/5' : 'border-white/10 bg-white/5'} p-6 flex flex-col`}>
+  <h3 class="text-lg font-semibold">{title}</h3>
+  <div class="mt-2">
+    <span class="text-4xl font-extrabold text-white">{price}</span>
+    <span class="text-white/70">{period}</span>
+  </div>
+  <ul class="mt-4 space-y-2 text-white/80 text-sm">
+    {bullets.map(b => <li>• {b}</li>)}
+  </ul>
+  <a href={ctaHref} class="mt-6 inline-flex items-center justify-center rounded-full bg-emerald-400 text-gray-900 px-5 py-2.5 font-semibold hover:bg-emerald-500 transition">
+    {ctaText}
+  </a>
+</article>
