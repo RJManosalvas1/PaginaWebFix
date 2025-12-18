@@ -2,47 +2,36 @@
 import Layout from '../layouts/Layout.astro';
 import FooterSocials from '../components/FooterSocials.astro';
 import HeroSection from '../components/HeroSection.astro';
-import LandingHeader from '../components/LandingHeader.astro';
-import InfraestructuraIT from '../components/SunmiRedirect.astro';
-import CentrosMisionCritica from '../components/CentrosMisionCritica.astro';
-import VideoVigilanciaInteligente from '../components/VideoVigilanciaInteligente.astro';
-import SolucionesMovilidad from '../components/SolucionesMovilidad.astro';
+import LandingHeader from '../components/LandingHeader.astro'; 
+import SunmiRedirect from '../components/SunmiRedirect.astro'; 
+import MiWifiRedirect from '../components/MiWiFiRedirect.astro'; 
 ---
 
 <Layout title="Fix Group">
+  <header>
+    <LandingHeader />
+  </header>
 
-	<header>
-		<LandingHeader />
-	</header>
-
-	<main
+  <main
     class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
- 	>
-			
-			<div class="snap-center">
-				<HeroSection />
-			</div>
+  >
+    <!-- HERO PRINCIPAL -->
+    <div class="snap-center">
+      <HeroSection />
+    </div>
 
-			<div class="snap-center">
-				<InfraestructuraIT />
-			</div>	
+    <!-- DISTRIBUIDOR SUNMI -->
+    <div class="snap-center">
+      <SunmiRedirect />
+    </div>
 
-			<div class="snap-center">
-				<CentrosMisionCritica />
-			</div>
-			
-			<div class="snap-center">
-				<SolucionesMovilidad />
-			</div>
-			
-			<div class="snap-center">
-				<VideoVigilanciaInteligente />
-			</div>
-		
-	</main>
+    <!-- MIWIFI MARKETING SECTION -->
+    <div class="snap-center">
+      <MiWifiRedirect />
+    </div>
+  </main>
 
-	<footer>
-		<FooterSocials />
-	</footer>		
-		    
+  <footer>
+    <FooterSocials />
+  </footer>
 </Layout>
